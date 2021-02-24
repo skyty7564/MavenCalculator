@@ -1,11 +1,13 @@
 package com.Calculator.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
 import com.Calculator.Calculator;
 
 public class TestUnit {
@@ -31,6 +33,26 @@ public class TestUnit {
 		Integer result = x+y;
 		assertEquals(result,Calculator.Sum(x,y));
 	
+	}
+	
+	@Test
+	public void TestFalse()
+	{
+		Integer x = 1;
+		Integer y = null;
+
+		assertNull(Calculator.Sum(x,y));
+		assertEquals(null,Calculator.Sum(x, y));
+		
+	}
+	@Test
+	public void Testnull()
+	{
+		Integer x = 1;
+		Integer y = null;
+
+		assertNull(Calculator.Sum(x,y));
+		
 	}
 	@Before
 	public  void runMessage2()
