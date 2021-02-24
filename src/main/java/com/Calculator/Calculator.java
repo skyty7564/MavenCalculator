@@ -3,7 +3,7 @@ package com.Calculator;
 public class Calculator {
 	
 	
-	public static Integer sum (Integer x, Integer y)
+	public static Integer Sum (Integer x, Integer y)
 	{
 		if(x == null || y ==null)
 		{
@@ -11,6 +11,37 @@ public class Calculator {
 		}
 		
 		return x+y;
+		
+	}
+	
+	public static Integer Difference (Integer x, Integer y)
+	{
+		if(x == null || y ==null)
+		{
+			return null;
+		}
+		
+		return x-y;
+		
+	}
+	public static Integer Multiplication (Integer x, Integer y)
+	{
+		if(x == null || y ==null)
+		{
+			return null;
+		}
+		
+		return x*y;
+		
+	}
+	public static Integer Division (Integer x, Integer y)
+	{
+		if(x == null || y ==null)
+		{
+			return null;
+		}
+		
+		return x/y;
 		
 	}
 }
