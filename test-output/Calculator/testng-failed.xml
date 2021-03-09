@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Calculator]">
+  <test thread-count="5" name="Two Parameter(failed)">
+    <parameter name="value1" value="1"/>
+    <classes>
+      <class name="com.Calculator.Test.TestUnit">
+        <methods>
+          <include name="runOnce"/>
+          <include name="runMessage4"/>
+          <include name="Test1"/>
+          <include name="runOnceClass"/>
+          <include name="runMessage2"/>
+          <include name="runMessage1"/>
+          <include name="runMessage3"/>
+          <include name="runLast"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.Calculator.Test.TestUnit -->
+    </classes>
+  </test> <!-- Two Parameter(failed) -->
   <test thread-count="5" name="all test(failed)">
     <classes>
       <class name="com.Calculator.Test.TestUnit">
         <methods>
-          <include name="TestFalse" invocation-numbers="0 1"/>
           <include name="runOnce"/>
           <include name="runMessage4"/>
+          <include name="Test1"/>
           <include name="runOnceClass"/>
           <include name="runMessage2"/>
           <include name="runMessage1"/>

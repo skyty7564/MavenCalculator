@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Calculator null">
+	<test name="Two Parameter">
+		<parameter name="value1" value="1" />
+		<classes>
+			<class name="com.Calculator.Test.TestUnit">
+				<methods>
+					<include name="Test1" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="one null value">
+		<parameter name="nullvalue1" value="1" />
+		<classes>
+			<class name="com.Calculator.Test.TestUnit">
+				<methods>
+					<include name="Testnull" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->

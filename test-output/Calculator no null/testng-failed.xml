@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Calculator null]">
-  <test thread-count="5" name="Two Parameter(failed)">
-    <parameter name="value1" value="1"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Calculator no null]">
+  <test thread-count="5" name="all test(failed)">
+    <groups>
+      <run>
+        <exclude name="nulltesters"/>
+      </run>
+    </groups>
     <classes>
       <class name="com.Calculator.Test.TestUnit">
         <methods>
@@ -18,5 +22,5 @@
         </methods>
       </class> <!-- com.Calculator.Test.TestUnit -->
     </classes>
-  </test> <!-- Two Parameter(failed) -->
-</suite> <!-- Failed suite [Calculator null] -->
+  </test> <!-- all test(failed) -->
+</suite> <!-- Failed suite [Calculator no null] -->

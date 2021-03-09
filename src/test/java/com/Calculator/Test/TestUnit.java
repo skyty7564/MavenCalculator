@@ -1,6 +1,6 @@
 package com.Calculator.Test;
 
-import java.util.ArrayList;
+
 
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -91,7 +91,7 @@ public class TestUnit {
 	}
 
 	@Parameters({ "nullvalue1", "nullvalue" })
-	@Test
+	@Test (groups = {"nulltester"})
 	public void Testnull(@Optional()Integer x, @Optional() Integer y) {
 
 		Integer result = null;
@@ -107,10 +107,18 @@ public class TestUnit {
 
 	}
 
-	@Parameters({ "value1", "value2" })
-	@Test
-	public void Test1(int x, int y) {
-		Integer result = x - y;
+	@Parameters({ "value1","value2" })
+	@Test (groups = {"nulltester"})
+	public void Test1(Integer x, @Optional()Integer y) {
+		Integer result;
+		if(x == null || y == null)
+		{
+			result = null;
+		}
+		else
+		{
+			result = x + y;
+		}
 		Assert.assertEquals(result, Calculator.Difference(x, y));
 	}
 

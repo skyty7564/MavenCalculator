@@ -1,38 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Calculator">
-	<test name="Two Parameter">
-		<parameter name="value1" value="1" />
-		<parameter name="value2" value="2" />
-		<classes>
-			<class name="com.Calculator.Test.TestUnit">
-				<methods>
-					<include name="Test1" />
-				</methods>
-			</class>
-		</classes>
-	</test> <!-- Test -->
+    <suite name="TestNG Dadadriver suite"  > 
+    <!-- suite name="Suite Name" --> 
+            <suite-files>
+                   <suite-file path="suitACalculatorNull.xml" />
+                   <suite-file path="suitbCaculatorNotNull.xml" />
 
-	<test name="one null value">
-		<parameter name="nullvalue1" value="1" />
-		<classes>
-			<class name="com.Calculator.Test.TestUnit">
-				<methods>
-					<include name="Testnull" />
-				</methods>
-			</class>
-		</classes>
-	</test>
+            </suite-files>
+    </suite>
 
-	<test name="all test">
-		<classes>
-			<class name="com.Calculator.Test.TestUnit">
-				<methods>
-					<exclude name="Testnull" />
-					<exclude name="Test1" />
-				</methods>
-			</class>
-		</classes>
 
-	</test>
-</suite> <!-- Suite -->
