@@ -5,14 +5,15 @@
     <classes>
       <class name="com.Calculator.Test.TestUnit">
         <methods>
+          <include name="TestFalse" invocation-numbers="0 1"/>
           <include name="runOnce"/>
-          <include name="Testnull"/>
           <include name="runMessage4"/>
           <include name="runOnceClass"/>
           <include name="runMessage2"/>
           <include name="runMessage1"/>
           <include name="runMessage3"/>
           <include name="runLast"/>
+          <include name="initialize"/>
         </methods>
       </class> <!-- com.Calculator.Test.TestUnit -->
     </classes>

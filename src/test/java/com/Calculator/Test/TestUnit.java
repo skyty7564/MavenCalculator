@@ -1,5 +1,7 @@
 package com.Calculator.Test;
 
+import java.util.ArrayList;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
@@ -7,6 +9,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -15,23 +18,59 @@ import com.Calculator.Calculator;
 
 public class TestUnit {
 
+	private Calculator setNumber;
+	private Calculator setNumber2;
+	private Calculator nullNumber;
+	
+	
 	@BeforeSuite
 	public static void runOnce() {
 		System.out.println("Test Will Start");
 
 	}
 
+	
+	@BeforeMethod
+	public void initialize() {
+		setNumber = new Calculator();
+		setNumber2 = new Calculator();
+		nullNumber = new Calculator();
+	}
+	
+	@DataProvider(name = "set1")
+	public static Object [][] setNumber(){
+		return new Object[][] {{1,3},{3,5},{2,null},{null,2}};
+	}
+	
+	@DataProvider(name = "set2")
+	public static Object [][] setNumber2(){
+		return new Object[][] {{1,null},{3,null},{2,null},{null,2}};
+	}
+	
+	@DataProvider(name = "set3")
+	public static Object [][] nullNumber(){
+		return new Object[][] {{null,null},{null,null},{null,null},{null,null}};
+	}
 	@BeforeMethod
 	public void runMessage1() {
 		System.out.println("Adding method");
 
 	}
 
-	@Test
-	public void Test() {
-		Integer x = 1;
-		Integer y = 2;
-		Integer result = x + y;
+	
+	@Test (dataProvider = "set1")
+	public void Test(Integer x, Integer y) {
+	
+		Integer result;
+		if(x == null || y == null)
+		{
+			result =null;
+		}
+		else
+		{
+			result = x + y;
+		}
+
 		Assert.assertEquals(result, Calculator.Sum(x, y));
 
 	}
@@ -42,10 +81,9 @@ public class TestUnit {
 
 	}
 
-	@Test
-	public void TestFalse() {
-		Integer x = 1;
-		Integer y = null;
+	@Test (dataProvider = "set2")
+	public void TestFalse(Integer x, Integer y) {
+
 
 		Assert.assertNull(Calculator.Sum(x, y));
 		Assert.assertEquals(null, Calculator.Sum(x, y));
