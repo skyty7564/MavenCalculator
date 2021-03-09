@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="com.Calculator.Test.TestUnit" duration-ms="45" started-at="2021-03-08T20:38:44 EST" finished-at="2021-03-08T20:38:44 EST">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="45" started-at="2021-03-08T20:38:44 EST" finished-at="2021-03-08T20:38:44 EST">
+      <class name="com.Calculator.Test.TestUnit">
+        <test-method status="PASS" signature="runMessage1()[pri:0, instance:com.Calculator.Test.TestUnit@13deb50e]" name="runMessage1" is-config="true" duration-ms="14" started-at="2021-03-08T20:38:44 EST" finished-at="2021-03-08T20:38:44 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runMessage1 -->
+        <test-method status="PASS" signature="runMessage2()[pri:0, instance:com.Calculator.Test.TestUnit@13deb50e]" name="runMessage2" is-config="true" duration-ms="0" started-at="2021-03-08T20:38:44 EST" finished-at="2021-03-08T20:38:44 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runMessage2 -->
+        <test-method status="PASS" signature="runOnce()[pri:0, instance:com.Calculator.Test.TestUnit@13deb50e]" name="runOnce" is-config="true" duration-ms="1" started-at="2021-03-08T20:38:44 EST" finished-at="2021-03-08T20:38:44 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runOnce -->
+        <test-method status="PASS" signature="Test()[pri:0, instance:com.Calculator.Test.TestUnit@13deb50e]" name="Test" duration-ms="4" started-at="2021-03-08T20:38:44 EST" finished-at="2021-03-08T20:38:44 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test -->
+        <test-method status="PASS" signature="Test1()[pri:0, instance:com.Calculator.Test.TestUnit@13deb50e]" name="Test1" duration-ms="0" started-at="2021-03-08T20:38:44 EST" finished-at="2021-03-08T20:38:44 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+        <test-method status="PASS" signature="Test2()[pri:0, instance:com.Calculator.Test.TestUnit@13deb50e]" name="Test2" duration-ms="0" started-at="2021-03-08T20:38:44 EST" finished-at="2021-03-08T20:38:44 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2 -->
+        <test-method status="PASS" signature="TestFalse()[pri:0, instance:com.Calculator.Test.TestUnit@13deb50e]" name="TestFalse" duration-ms="0" started-at="2021-03-08T20:38:44 EST" finished-at="2021-03-08T20:38:44 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestFalse -->
+        <test-method status="PASS" signature="Test3()[pri:0, instance:com.Calculator.Test.TestUnit@13deb50e]" name="Test3" duration-ms="0" started-at="2021-03-08T20:38:44 EST" finished-at="2021-03-08T20:38:44 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test3 -->
+        <test-method status="PASS" signature="Testnull()[pri:0, instance:com.Calculator.Test.TestUnit@13deb50e]" name="Testnull" duration-ms="0" started-at="2021-03-08T20:38:44 EST" finished-at="2021-03-08T20:38:44 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Testnull -->
+        <test-method status="PASS" signature="runLast()[pri:0, instance:com.Calculator.Test.TestUnit@13deb50e]" name="runLast" is-config="true" duration-ms="0" started-at="2021-03-08T20:38:44 EST" finished-at="2021-03-08T20:38:44 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runLast -->
+      </class> <!-- com.Calculator.Test.TestUnit -->
+    </test> <!-- Command line test -->
+  </suite> <!-- com.Calculator.Test.TestUnit -->
+</testng-results>

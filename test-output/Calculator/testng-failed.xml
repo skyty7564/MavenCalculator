@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Calculator]">
+  <test thread-count="5" name="all test(failed)">
+    <classes>
+      <class name="com.Calculator.Test.TestUnit">
+        <methods>
+          <include name="runOnce"/>
+          <include name="Testnull"/>
+          <include name="runMessage4"/>
+          <include name="runOnceClass"/>
+          <include name="runMessage2"/>
+          <include name="runMessage1"/>
+          <include name="runMessage3"/>
+          <include name="runLast"/>
+        </methods>
+      </class> <!-- com.Calculator.Test.TestUnit -->
+    </classes>
+  </test> <!-- all test(failed) -->
+</suite> <!-- Failed suite [Calculator] -->

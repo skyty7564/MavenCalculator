@@ -7,6 +7,7 @@ public class Calculator {
 	{
 		if(x == null || y ==null)
 		{
+		
 			return null;
 		}
 		
@@ -18,6 +19,7 @@ public class Calculator {
 	{
 		if(x == null || y ==null)
 		{
+			
 			return null;
 		}
 		
@@ -28,6 +30,7 @@ public class Calculator {
 	{
 		if(x == null || y ==null)
 		{
+			
 			return null;
 		}
 		
@@ -38,6 +41,7 @@ public class Calculator {
 	{
 		if(x == null || y ==null)
 		{
+		
 			return null;
 		}
 		
